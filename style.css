@@ -1,0 +1,150 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.table {
+    position: absolute;
+    left: 50%;
+    top: 75px;
+    transform: translateX(-50%);
+    height: 300px;
+	width: 500px;
+	z-index: -1;
+}
+
+.roll-name {
+    position: absolute;
+    left: 50%;
+    top: 467px;
+	font-size: 20px;
+    transform: translateX(-50%);
+}
+
+.results-view {
+    position: absolute;
+    left: 50%;
+    top: 500px;
+	font-size: 20px;
+    transform: translateX(-50%);
+}
+
+.final-score {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 520px;
+	color: #555;
+	font-size: 18px;
+	font-family: "Lato";
+	text-align: center;
+	padding: 10px;
+	width: 160px;
+	text-transform: uppercase;
+}
+
+.final-score:focus { outline: none; }
+
+#dice-1 {left: 40%; }
+#dice-2 {left: 60%; }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-color: rgba(255, 255, 153);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+
+
+
+/**********************************************
+*** PLAYERS
+**********************************************/
+
+.player-name {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.active .player-name { 
+	font-weight: 300;
+	text-decoration: underline;
+}
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+.btn-new { top: 45px;}
+.btn-roll { top: 420px;}
+.btn-hold { top: 467px;}
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+.winner { background-color: #f7f7f7; }
+.winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+
+
+
+

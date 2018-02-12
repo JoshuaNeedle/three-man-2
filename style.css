@@ -9,15 +9,6 @@
     
 }
 
-.table {
-    position: absolute;
-    left: 50%;
-    top: 75px;
-    transform: translateX(-50%);
-    height: 300px;
-	width: 500px;
-	z-index: -1;
-}
 
 .roll-name {
     position: absolute;
@@ -86,6 +77,15 @@ body {
 *** PLAYERS
 **********************************************/
 
+.player-names {
+    position:absolute;
+    padding: 0px 20px;
+    background-color: white;
+    width: 200px;
+    height:100%;
+    border: 1px solid black;
+}
+
 .player-name {
     font-size: 20px;
     text-transform: uppercase;
@@ -125,6 +125,18 @@ button:focus {
     outline: none;
 }
 
+.rolling-table {
+    position:absolute;
+    left: 50%;
+    top: 75px;
+    transform: translateX(-50%);
+    height: 300px;
+	width: 600px;
+	z-index: -1;
+	background-image: url("background.jpg");
+	border: 1px solid black;
+}
+
 i {
     color: #EB4D4D;
     display: inline-block;
@@ -141,13 +153,21 @@ i {
 .btn-hold { top: 467px;}
 
 .dice {
-    position: absolute;
-    left: 50%;
-    top: 178px;
+    position:absolute;
+    top: 120px;
     transform: translateX(-50%);
-    height: 100px;
+    height: 75px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
+
+#dice-1 {
+    left:35%;
+}
+
+#dice-2 {
+    left:65%;
+}
+
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
